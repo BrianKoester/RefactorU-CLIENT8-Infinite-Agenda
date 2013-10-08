@@ -3,7 +3,7 @@ Brian Koester and Chris Lizama
 Comments on solution code:
 Raine's solution created a new div for appointment info on a separate line while
 our solution created a new div 'on top' of our existing appointment div
-and then replaced it. Date function 
+and then replaced it. 
 
 Raine's JS code was clearly defined with three sections:
 variable initialization, function declarations, and event handlers.
