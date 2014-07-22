@@ -1,16 +1,7 @@
-// just copy this function into your utility.js
-// don't try to understand this until you have jedi powers
-if (!String.prototype.supplant) {
-    String.prototype.supplant = function (o) {
-        return this.replace(
-            /\{([^{}]*)\}/g,
-            function (a, b) {
-                var r = o[b];
-                return typeof r === 'string' || typeof r === 'number' ? r : a;
-            }
-        );
-    };
-}
+/////
+// Ap created an 'infinte' agenda that has editable appointment field
+/////
+
 
 $(document).ready(function(){
 
@@ -44,7 +35,7 @@ $(document).ready(function(){
 	}
 	
 		// Enable appointment editing
-	   	$(".appointment").click(divClicked);
+	   	$(document).on('click','.appointment', divClicked);
 
 	    // Detect that we are at bottom of page, and call autoloading function
         $(window).scroll(function() { 
@@ -63,7 +54,7 @@ $(document).ready(function(){
 
 			       
 			        	// Select and edit appointment fields
-			        	$(".appointment").click(divClicked);
+			        	//$(".appointment").click(divClicked);
 
 		        	}
             }
